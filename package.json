@@ -1,0 +1,10 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd api && node src/index.js",
+    "install:api": "cd api && npm install",
+    "postinstall": "npm run install:api"
+  }
+}
