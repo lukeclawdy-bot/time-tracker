@@ -1,4 +1,5 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://time-tracker-production-f3f7.up.railway.app';
+const rawUrl = process.env.NEXT_PUBLIC_API_URL || 'https://time-tracker-production-f3f7.up.railway.app';
+const API_BASE_URL = rawUrl.startsWith('http') ? rawUrl : `https://${rawUrl}`;
 
 export interface TimeEntry {
   id: number;
